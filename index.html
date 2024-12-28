@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mentorship Agreement Form</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://www.gstatic.com/firebasejs/9.17.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.17.2/firebase-firestore.js"></script>
+</head>
+<body>
+  <div class="form-container">
+    <h1>BrainBox Mentorship Agreement</h1>
+    <form id="mentorshipForm">
+      <div class="form-group">
+        <label for="fullName">Full Name</label>
+        <input type="text" id="fullName" placeholder="Enter your full name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+      </div>
+      <div class="form-group">
+        <label for="address">Address</label>
+        <input type="text" id="address" placeholder="Enter your address">
+      </div>
+      <div class="form-group">
+        <label for="country">Country</label>
+        <input type="text" id="country" placeholder="Enter your country" required>
+      </div>
+      <div class="form-group">
+        <label for="job">Job</label>
+        <input type="text" id="job" placeholder="Your current job">
+      </div>
+      <div class="form-group">
+        <label for="investment">Investment Amount</label>
+        <input type="number" id="investment" placeholder="Amount you’re willing to invest" required>
+      </div>
+      <div class="form-group">
+        <label for="hours">Weekly Commitment (Hours)</label>
+        <input type="number" id="hours" placeholder="Hours you’re willing to put in" required>
+      </div>
+      <div class="form-group">
+        <label for="income">Desired Income</label>
+        <input type="text" id="income" placeholder="Income you aim to achieve" required>
+      </div>
+      <div class="form-group">
+        <label>
+          <input type="checkbox" id="consent" required> I agree to follow all guidance from the mentor.
+        </label>
+      </div>
+      <button type="submit" class="submit-btn">Submit</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyDfdAj7hhjmncWchJqaz_Rdm14aGGiso90",
+      authDomain: "form-page-3a24d.firebaseapp.com",
+      projectId: "form-page-3a24d",
+      storageBucket: "form-page-3a24d.firebasestorage.app",
+      messagingSenderId: "513775440848",
+      appId: "1:513775440848:web:699535a5631effec2f1fd5"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+  </script>
+</body>
+</html>
